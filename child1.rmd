@@ -1,0 +1,14 @@
+
+## Subject {{i}}
+
+```{r}
+
+child.data<- Theoph %>% filter(Subject=={{i}})
+ggplotly(
+  ggplot(child.data,aes(Time,conc))+
+  geom_point()+
+  geom_smooth(se = F,colour="Black")
+)
+
+
+```
